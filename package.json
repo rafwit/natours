@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "sass src/sass/main.scss:src/css/main.css --no-source-map",
+    "compile:dev": "sass --watch src/sass/main.scss:src/css/main.css --no-source-map"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "commitizen": "^4.2.2",
     "prettier": "^2.2.1",
     "sass": "^1.32.2"
-  }
+  },
+  "dependencies": {}
 }
